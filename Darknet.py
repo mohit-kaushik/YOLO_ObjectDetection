@@ -43,3 +43,12 @@ class YOLO_model(torch.nn.Module):
     self.conv19 = Conv_Block(1024,512, kernel_size=1, stride=1, padding=0)
     self.conv20 = Conv_Block(512, 1024, kernel_size=3, stride=1, padding=1)
 
+    self.conv21 = Conv_Block(1024, 1024, kernel_size=3, stride=1, padding=1)
+    self.conv22 = Conv_Block(1024, 1024, kernel_size=3, stride=2, padding=1)
+    
+    self.conv23 = Conv_Block(1024, 1024, kernel_size=3, stride=1, padding=1)
+    self.conv24 = Conv_Block(1024, 1024, kernel_size=3, stride=1, padding=1)
+
+    self.fc = FC_Block()
+    self.maxpool = torch.nn.MaxPool2d(kernel_size=2, stride=2)
+
