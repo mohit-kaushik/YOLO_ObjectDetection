@@ -65,3 +65,15 @@ class YOLO_model(torch.nn.Module):
     x = self.conv6(x)
     x = self.maxpool(x)
 
+    x = self.conv7(x)
+    x = self.conv8(x)
+    x = self.conv9(x)
+    x = self.conv10(x)
+    x = self.conv11(x)
+    x = self.conv12(x)
+    x = self.conv13(x)
+    x = self.conv14(x)
+    x = self.conv15(x)
+    x = self.conv16(x)
+    x = self.maxpool(x)
+
