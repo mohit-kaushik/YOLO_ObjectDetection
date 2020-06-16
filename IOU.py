@@ -10,3 +10,6 @@ def intersection_over_union(box_values, actual_box):
   inter_box_x2 = torch.min(box_values[...,2:3], actual_box[...,2:3])
   inter_box_y2 = torch.min(box_values[...,3:4], actual_box[...,3:4])
 
+  # when no intersection substraction will be negitive so clamp -ve values to 0.
+  inter_box_area = (inter_box_x2 - inter_box_x1).clamp(0) * (inter_box_y2 - inter_box_y1).clamp(0)
+
