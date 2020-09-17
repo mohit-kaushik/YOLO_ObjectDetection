@@ -1,5 +1,5 @@
 # Object Detection with YOLO
-
+<img src="./images/darknet-yolo.jpg" />
 Basics
 1) Object Localization is what and where a single object is in the image.
 
