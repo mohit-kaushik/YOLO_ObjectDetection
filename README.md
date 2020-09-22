@@ -1,11 +1,11 @@
 # Object Detection with YOLO
 <img src="./images/darknet-yolo.jpg" />
-Basics
+<h3> Basics </h3>
 1) Object Localization is what and where a single object is in the image.
 
 2) Object Detection is what and where multiple objects are in the image.
 
-IOU
+<h3>IOU</h3>
 <li>
 	Assuming top left and bottom right coords of two boxes are passed as args (two predicted or one actual vs one predicted).
 </li>
@@ -14,7 +14,7 @@ IOU
 </li>
 <li>Intersection coords bottom right = min_x(bottom_right box1, bottom_right box2), min_y(bottom_right box1, bottom_right box2)</li>
 
-<b>Non Max Supression</b>
+<h3>Non Max Supression</h3>
 <ul>
 	<li>Helps in clearing the cluter or if same object center is detected in multiple grids or may be same grid</li>
 	<li>In YoloV1 each grid predicts two bouding boxes, among which we choose one. One grid can only detect one object. </li>
